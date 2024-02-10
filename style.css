@@ -1,0 +1,25 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.banner{
+    background-image: url(/gopinath_portfolio/images/slider.jpg);
+    color: azure;
+    background-size: cover;
+    padding: 200px 0px;
+}
+nav ul li a{
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: gray;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
