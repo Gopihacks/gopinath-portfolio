@@ -2,7 +2,7 @@ body{
     font-family: "Poppins", sans-serif;
 }
 .banner{
-    background-image: url(/gopinath_portfolio/images/slider.jpg);
+    background-image: url(./images/slider.jpg);
     color: azure;
     background-size: cover;
     padding: 200px 0px;
