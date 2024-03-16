@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -40,7 +41,7 @@
     </div>
   </nav>
   <section id="home" class=" banner text-center">
-    <div class="container">
+    <div class="container"  data-aos="fade-out" data-aos-duration="2500">
       <div class="row">
         <div class="col-md-12 w-75 m-auto">
           <h1 class="py-2">Hai I'm Gopinath</h1>
@@ -55,14 +56,14 @@
   <section id="about" class=" py-4">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="slide-right" data-aos-duration="2000">
           <h4>About me</h4>
           <p>I'm currently rounding off my studies in Cyber Security at Mahendra Engineering College.My skill set includes HTML,CSS,basic Javascript,
             basic Java and Oops Concept.With hands-on experience in Power BI from ICT Academy,I'm not just fascinated by the ever-evolving world of cybersecurity
             ;I'm also passionate about crafting user experiences through front-end development.Always eager to enhance my skills and contribute to these dynamic fields.
           </p>
         </div>
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 text-center" data-aos="slide-left" data-aos-duration="2000">
           <img src="./images/gopi pic.jpg" alt="Gopinath" class="img-fluid w-50" />
         </div>
       </div>
@@ -76,7 +77,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="slide-left" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/html.jpg" class="card-img-top" alt="HTML">
             <div class="card-body text-center">
@@ -87,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/css1.png" class="card-img-top w-25 m-auto pt-5" alt="Css">
             <div class="card-body text-center">
@@ -97,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/js.png" class="card-img-top w-50 m-auto pt-3" alt="JavaScript">
             <div class="card-body text-center">
@@ -106,7 +107,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="slide-right" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/java-org.jpg" class="card-img-top w-75 m-auto" alt="Java">
             <div class="card-body text-center">
@@ -115,7 +116,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="zoom-out" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/bootstrap.png" class="card-img-top w-75 m-auto" alt="Bootstrap ">
             <div class="card-body text-center">
@@ -124,7 +125,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="zoom-out" data-aos-duration="2000">
           <div class="card mb-3">
             <img src="./images/powerBI.png" class="card-img-top w-75 m-auto pt-3" alt="PowerBI">
             <div class="card-body text-center">
@@ -137,7 +138,7 @@
     </div>
   </section>
   <section id="contact" class="bg-dark-subtle">
-    <div class="container">
+    <div class="container" data-aos="fade-in" data-aos-duration="2000">
       <div class="row">
         <div class="col-md-12 text-center pb-4 pt-3">
           <h3>Contact</h3>
@@ -197,6 +198,10 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </html>
